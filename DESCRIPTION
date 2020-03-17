@@ -1,11 +1,10 @@
 Package: warmoceanecon
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Economic Impacts of Different Ocean Temperatures
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Anna Abelman and Kat Leigh
+Maintainer: The package maintainer <aabelman@uscb.edu>
+Description: This package contains three functions that identify the 2 warmest temperatures across a set of locations and their associated economic impacts. To use this package you must install the following packages: tidyverse
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
