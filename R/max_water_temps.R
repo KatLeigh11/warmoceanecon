@@ -2,8 +2,7 @@
 #' @description This function returns the top two temperatures experienced within a given set of locations, a list of the locations experiencing these two temperatures, and the total geographic area experiencing these two temperatures in km.
 #' @param df_raw: a dataframe with columns for locations ('locs'), temperatures ('temps'), sizes of each location in km ('loc_sizes')
 #' @return The warmest and second warmest temperatures, a list of all the locations experiencing the warmest and 2nd warmest temperatures, the associated sizes with each locaton, and the total area experiencing the warmest temperature and the 2nd warmest temperature.
-
-library(tidyverse)
+#' @export
 
 Max_2_temps <- function(temps, locs, loc_sizes) {
   df_raw %>%

@@ -5,6 +5,7 @@
 #' @param pops_sizes: A dataframe with columns for population sizes ("population"), location sizes in km ("km"), and locations ("Location").
 #' @param df_temps2: A dataframe with columns for economic losses ("Scores") and locations ("Location") for temp 2.
 #' @return One dataframe for temp 1 and another for temp 2, each with columns for locations and the per capita economic losses for each location. Also, the per km economic losses due to temp #1, and the per km economic losses due to temp #2.
+#' @export
 
 temp_damages_km_cap <- function(df_temps1, df_temps2, pops_sizes){
 

@@ -12,6 +12,7 @@
 #' 3 = $30,000,000
 #' 4 = $44,000,000
 #' 5 = $600,000,000.
+#' @export
 
 
 damage_per_loc <- function(temp_1_locs, temp_2_locs, econ_scores){
