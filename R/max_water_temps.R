@@ -1,8 +1,7 @@
-# ideas for ass3_262
-
-# Maximum water temp across locations
-#   Inputs: list of temperatures at different locations, list of locations, list of size of each location (in km)
-#   Outputs: top 2 water temps, names of locations experiencing temp #1, total number kms experiencing temp #1, names of locations experiencing temp #2, total number kms experiencing temp #2
+#' @title  Top two warmest water temperatures across locations
+#' @description This function returns the top two temperatures experienced within a given set of locations, a list of the locations experiencing these two temperatures, and the total geographic area experiencing these two temperatures in km.
+#' @param df_raw: a dataframe with columns for locations ('locs'), temperatures ('temps'), sizes of each location in km ('loc_sizes')
+#' @return The warmest and second warmest temperatures, a list of all the locations experiencing the warmest and 2nd warmest temperatures, the associated sizes with each locaton, and the total area experiencing the warmest temperature and the 2nd warmest temperature.
 
 library(tidyverse)
 
@@ -29,21 +28,3 @@ Max_2_temps <- function(temps, locs, loc_sizes) {
 
 }
 
-#maxs = order(temps, decreasing=TRUE)[1:2]
-# names_temp_1 <- df_raw %>%
-#   filter(temps == maxs[1]) %>%
-#   pull(locs)
-
-# temp_1_sizes <- df_raw %>%
-#   filter(temps == maxs[1]) %>%
-#   summarize(sum = sum(loc_sizes))
-
-# names_temp_2 <- df_raw %>%
-#   filter(temps == maxs[2]) %>%
-#   select(locs)
-#
-# temp_2_sizes <- df_raw %>%
-#   filter(temps == maxs[2]) %>%
-#   summarize(sum = sum(loc_sizes))
-
-#  return(list("Top 2 Water Temperatures" = maxs, "Locations experiencing warmest temperature" = temp_1_sizes, "Total kilometers experiencing the warmest temperature" = temp_1_sizes, "Locations experiencing second-warmest temperature" = temp_2_sizes, "Total kilometers experiencing the second-warmest temperature" = temp_2_sizes))

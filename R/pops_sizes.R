@@ -6,5 +6,6 @@
 #' \population - a list of the population sizes for each location
 #' \locs - a list of 10 different California locations
 #' \loc_sizes - a list of the sizes in kilometers per location
-#' \pop_sizes - a data frame with the 10 locations and the corresponding population sizes and the location sizes (km)
+#' \pops_sizes - a data frame with the 10 locations and the corresponding population sizes and the location sizes (km)
 #' }
+"pops_sizes"

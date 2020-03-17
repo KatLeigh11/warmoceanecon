@@ -12,3 +12,4 @@
 #' 5 = $600,000,000
 #' \econ_scores - dataframe containing the locations and the associated economic scores
 #' }
+"econ_scores"

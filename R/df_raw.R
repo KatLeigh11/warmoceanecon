@@ -8,3 +8,4 @@
 #' \loc_sizes - a list of the sizes in kilometers per location
 #' \df_raw - dataframe that contains the vectors: locations, temperatures, and location sizes
 #' }
+"df_raw"
