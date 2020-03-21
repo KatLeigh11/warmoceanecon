@@ -19,9 +19,9 @@ damage_per_loc <- function(temp_1_locs, temp_2_locs, econ_scores){
 
   # create dataframe for temps1 and temps2 w/ economic scores associated
 
-  df_temps1 <- full_join(temp_1_locs, econ_scores) %>%
+  df_temps1 <<- full_join(temp_1_locs, econ_scores) %>%
     drop_na()
-  df_temps2 <- full_join(temp_2_locs, econ_scores,) %>%
+  df_temps2 <<- full_join(temp_2_locs, econ_scores) %>%
     drop_na()
 
   # replace scores w/ damage values in both dataframes
@@ -32,15 +32,15 @@ damage_per_loc <- function(temp_1_locs, temp_2_locs, econ_scores){
   df_temps1$Damages_USD[df_temps1$Damages_USD == 4] <- 44000000
   df_temps1$Damages_USD[df_temps1$Damages_USD == 5] <- 600000000
 
-  df_temps2$Damages_USD[df_temps1$Damages_USD == 1] <- 1400000
-  df_temps2$Damages_USD[df_temps1$Damages_USD == 2] <- 7100000
-  df_temps2$Damages_USD[df_temps1$Damages_USD == 3] <- 30000000
-  df_temps2$Damages_USD[df_temps1$Damages_USD == 4] <- 44000000
-  df_temps2$Damages_USD[df_temps1$Damages_USD == 5] <- 600000000
+  df_temps2$Damages_USD[df_temps2$Damages_USD == 1] <- 1400000
+  df_temps2$Damages_USD[df_temps2$Damages_USD == 2] <- 7100000
+  df_temps2$Damages_USD[df_temps2$Damages_USD == 3] <- 30000000
+  df_temps2$Damages_USD[df_temps2$Damages_USD == 4] <- 44000000
+  df_temps2$Damages_USD[df_temps2$Damages_USD == 5] <- 600000000
 
   # sum all losses across both locations
 
-  tot_damage <- sum(df_temps1$Damages_USD)+sum(df_temps2$Damages_USD)
+  tot_damage <<- sum(df_temps1$Damages_USD)+sum(df_temps2$Damages_USD)
 
   # return the desired outputs
 

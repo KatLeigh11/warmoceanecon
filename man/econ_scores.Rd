@@ -6,7 +6,7 @@
 \title{Location and Economic Score Data Frame}
 \format{Individual vectors with list of each variable were initially created. A data frame was created in tidy format.}
 \source{
-This data was randomly created
+This data was randomly created, but inspired by the dataset provided by the SSTI analysis of BEA and Census Data from 2015 on GDP per county in the USA.
 \describe{
 \locs - a list of 10 different California locations
 \Scores - Economic scores represent damage brackets (in USD) as defined below:
