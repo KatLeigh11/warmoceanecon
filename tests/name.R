@@ -1,7 +1,7 @@
 # ---------------------------------
 # Testing for functions
 # ---------------------------------
-# to test function: file_test("test/name.R")
+# to test function: file_test("tests/name.R")
 
 # ---------------------------------
 # function 1: max temperatures
