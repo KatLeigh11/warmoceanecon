@@ -1,7 +1,8 @@
 # ---------------------------------
 # Testing for functions
 # ---------------------------------
-# to test function: file_test("tests/name.R")
+# to test function: test_file("tests/name.R")
+# make sure to run library(testthat) first!!!
 
 # ---------------------------------
 # function 1: max temperatures
